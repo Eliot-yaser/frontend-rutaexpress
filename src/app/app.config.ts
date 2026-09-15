@@ -33,7 +33,8 @@ export function MSALGuardConfigFactory(): MsalGuardConfiguration {
   return {
     interactionType: InteractionType.Redirect,
     authRequest: {
-      scopes: ['user.read']
+      scopes: ['user.read'],
+      prompt: 'select_account' // Forzar a pedir cuenta/contraseña
     }
   };
 }
