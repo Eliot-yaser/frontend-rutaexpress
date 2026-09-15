@@ -1,0 +1,43 @@
+<div class="container my-4">
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <h3>🛡️ Registro de Auditoría y Seguridad (MSAL / JWT)</h3>
+    <span class="badge bg-info text-dark">Monitoreo en Tiempo Real</span>
+  </div>
+
+  <div class="table-responsive bg-white shadow-sm rounded p-3">
+    <table class="table table-striped table-sm align-middle">
+      <thead class="table-dark">
+        <tr>
+          <th>Fecha/Hora</th>
+          <th>Usuario</th>
+          <th>Acción Realizada</th>
+          <th>Método HTTP</th>
+          <th>Estado Http</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2026-09-15 11:15:02</td>
+          <td>el.armijo@duocuc.cl</td>
+          <td>Autenticación Entra ID / PKCE</td>
+          <td><code>POST /oauth2/v2.0/token</code></td>
+          <td><span class="badge bg-success">200 OK</span></td>
+        </tr>
+        <tr>
+          <td>2026-09-15 11:16:10</td>
+          <td>el.armijo@duocuc.cl</td>
+          <td>Consulta de Envíos Activos</td>
+          <td><code>GET /api/shipments</code></td>
+          <td><span class="badge bg-success">200 OK</span></td>
+        </tr>
+        <tr>
+          <td>2026-09-15 11:17:40</td>
+          <td>Anónimo (Postman sin Bearer Token)</td>
+          <td>Intento Acceso Restringido</td>
+          <td><code>GET /api/shipments</code></td>
+          <td><span class="badge bg-danger">401 Unauthorized</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
